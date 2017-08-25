@@ -16,6 +16,6 @@
             if the guess is less than the random number the computer will output "higher", and
             if the guess is equal to the random number it will output "correct!"
     Step 10: The computer will output the users score
- *
+ * 
  *
  */
