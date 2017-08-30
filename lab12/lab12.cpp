@@ -2,6 +2,7 @@
 //By: Robert Thomas
 //Date: 8/29/2017
 //ASCII sword (kind of) using output stream to render
+//Based (loosely) on 'Dragon Master Dagger' ASCII art created by Joshua Howard
 
 //Preprocessor Directives
 #include <iostream>
