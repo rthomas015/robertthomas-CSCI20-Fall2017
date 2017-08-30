@@ -3,9 +3,11 @@
 //Date: 8/29/2017
 //ASCII sword (kind of) using output stream to render
 
+//Preprocessor Directives
 #include <iostream>
 using namespace std;
 
+//Start of program
 int main () {
     
     cout << "       /|\\           " << endl;
