@@ -11,6 +11,7 @@ using namespace std;
 //Start of program
 int main () {
     
+    cout << "                      " << endl;
     cout << "       /|\\           " << endl;
     cout << "      / | \\          " << endl;
     cout << "     /  |  \\         " << endl;
@@ -37,6 +38,37 @@ int main () {
     cout << "      |****|         " << endl;
     cout << "      /____\\         " << endl;
     cout << "      \\____/         " << endl;
+    
+    /* ASCII drawing will output the following
+    
+       /|\           
+      / | \          
+     /  |  \         
+     |  /\  |        
+     | |  | |         
+     | |  | |         
+     | |  | |         
+     | |  | |         
+     | |  | |         
+     | |  | |         
+     | |  | |         
+     | |  | |         
+     | |  | |         
+     | |  | |         
+     | |  | |         
+   ═ | |  | | ═       
+{==[+  \ + /  +]==}  
+    \========/        
+     \|****|/         
+      |****|         
+      |****|         
+      |****|         
+      |****|         
+      |****|         
+      /____\         
+      \____/  
+      
+      */
     
     return 0;
 }
