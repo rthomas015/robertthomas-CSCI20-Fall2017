@@ -1,0 +1,33 @@
+//Comment section w/ information about the program
+//Created By: April Browne
+//Created On: 8/22/2016
+ 
+ //preprocessor directives
+ #include <iostream> //*particularly important
+ using namespace std;
+ 
+ //main function (start of program)
+ int main() //*particularly important
+ {
+    //declaration of variables
+     int studentID = 0;
+     
+     //input and output
+     cout<<"Please enter a student ID number: ";
+     cin >> studentID;
+ 
+     cout<<"Hello World! "<<studentID<<endl; //? doesn't fit suggested formatting, and the purpose of saying "hello world" is unclear
+     
+     //? missing return 0 at end of program
+ }
+ 
+ //The algorithm of the program
+ //Step 1: define variable for studentID
+ //Step 2: Output prompt to user of program asking for studentID
+ //Step 3: Take information from user and store it in studentID
+ //Step 4: output text to user of program, including the studentID they just entered
+ 
+//Identify with a //* 2-3 items that seem important
+//Identify with a //? 2-3 items that seem incorrect, unclear or where you have questions
+//Identify the different parts of the program.
+//Create comments that show the algorithm of the program.
