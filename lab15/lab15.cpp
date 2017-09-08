@@ -12,18 +12,22 @@ using namespace std;
 
 //Start of Program
 int main () {
+    
+    //define default words
     string adjective_0 = "fourteen",
            adjective_1 = "four",
            adjective_2 = "splendid",
            adjective_3 = "zero",
            noun_0 = "chicken breast",
            noun_1 = "way too expensive kibble";
-          
+    
+    //Request input from user
     cout << "Enter four adjectives (separated by a space): ";
     cin >> adjective_0 >> adjective_1 >> adjective_2 >> adjective_3;
     cout << endl << "Enter two nouns (separated by a space): ";
     cin >> noun_0 >> noun_1;
-           
+    
+    //display Madlib text with word substitution
     cout << "I wish my life was like my dog Layla's. I would get to sleep "
          << adjective_0 << " hours a day. Every day I would get to eat " 
          << adjective_1 << " large meals of "
