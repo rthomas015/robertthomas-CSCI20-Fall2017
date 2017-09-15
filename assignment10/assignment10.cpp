@@ -2,8 +2,8 @@
   Weekly Paystub Generator
   By: Robert Thomas
   Date: 9/12/2017
-  Description: This program will take information from the user (first name, last name, hours worked per week, hourly wage, mileage start and finish
-  and health insurance premium) to generate a person's weekly pay stub
+  Description: This program will take information from the user for an employee (first name, last name, hours worked per week, hourly wage,
+  mileage start and finish and health insurance premium) to generate an employee's weekly pay stub
 */
 
 //Preprocessor Directives
@@ -11,10 +11,12 @@
 #include <string>
 using namespace std;
 
-//Employee Paystub Struct
+//Employee Paystub Struct with variables that are specific to each employee instance
 struct employee_paystub {
+    
     string employee_first_name,
            employee_last_name;
+           
     double hours_worked_in_week,
            hourly_wage,
            odometer_start,
@@ -36,9 +38,7 @@ int main () {
     
     employee_paystub employee_1;
     
-    /*  employee name (first and last), hours worked in the week, 
-        hourly pay, insurance cost, starting odometer reading and ending odometer reading
-    */
+    //Get input from user
     
     cout << "Weekly Paystub Generator"
          << endl
