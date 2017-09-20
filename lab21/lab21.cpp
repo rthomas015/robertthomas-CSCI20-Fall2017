@@ -41,13 +41,13 @@ int main () {
          << endl << velocity 
          << "              " << old_style_windchill(temp, velocity)
          << "       " << new_style_windchill(temp, velocity)
-         << "       " << (old_style_windchill(temp, velocity) - new_style_windchill(temp, velocity));
+         << "       " << abs(old_style_windchill(temp, velocity) - new_style_windchill(temp, velocity));
     
     /*Program output
         Wind Speed     Old Formula     New Formula     Difference
             4              30.5753       25.767        4.8083
-            10             27.8601       32.713       -4.85286
-            2              98.7538       105.711      -6.95719
+            10             27.8601       32.713        4.85286
+            2              98.7538       105.711       6.95719
     
     */
     
