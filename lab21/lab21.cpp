@@ -12,13 +12,13 @@
 using namespace std;
 
 //Function to calculate old style windchill
-double old_style_windchill (double temp, double velocity) {
+double OldStyleWindchill (double temp, double velocity) {
     double windchill = (.081 * ((3.71 * sqrt(velocity)) + 5.81 - (.25 * velocity)) * (temp - 91.4)) + 91.4;
     return windchill;
 }
 
 //Function to calculate new style windchill
-double new_style_windchill (double temp, double velocity) {
+double NewStyleWindChill (double temp, double velocity) {
     double windchill = (35.74 + (.6215 * temp) - (35.75 * pow(velocity,.16)) + (.4275 * temp * pow(velocity,.16)));
     return windchill;
 }
@@ -39,9 +39,9 @@ int main () {
     //Output Wind Speed, Old Formula, New Formula, Difference between two styles
     cout << endl << "Wind Speed     Old Formula     New Formula     Difference" 
          << endl << velocity 
-         << "              " << old_style_windchill(temp, velocity)
-         << "       " << new_style_windchill(temp, velocity)
-         << "       " << abs(old_style_windchill(temp, velocity) - new_style_windchill(temp, velocity));
+         << "              " << OldStyleWindchill(temp, velocity)
+         << "       " << NewStyleWindChill(temp, velocity)
+         << "       " << abs(OldStyleWindchill(temp, velocity) - NewStyleWindChill(temp, velocity));
     
     /*Program output
         Wind Speed     Old Formula     New Formula     Difference
