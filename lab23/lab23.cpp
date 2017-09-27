@@ -23,7 +23,7 @@ void SwapNumbers(int &number_1, int &number_2) {
 }
 
 //Function to generate a random number between number_1 and number_2 and output the information
-int GenerateRandomNumber(int number_1, int number_2) {
+void GenerateRandomNumber(int number_1, int number_2) {
     int random_number = 0;
     
     SwapNumbers(number_1, number_2);
@@ -32,12 +32,12 @@ int GenerateRandomNumber(int number_1, int number_2) {
     random_number = (rand () % (number_1 - number_2 + 1)) + number_2;
     
     //output information to user
-    cout << "A random number between " << number_2 << " and " << number_1 << " is " << random_number << ".";
-    return 0;
+    cout << "A random number between " << number_2 << " and " << number_1 << " is " << random_number << "." << endl;
+    return;
 }
 
 int main () {
-    int number_1 = 0, number_2 = 0;
+    int number_1 = 0, number_2 = 0, x = 0;
     
     //Ask for input from user (two integers)
     cout << "Please enter first number: ";
@@ -47,7 +47,7 @@ int main () {
     
     //call random number generating function
     GenerateRandomNumber(number_1, number_2);
-    
+
     //program output:
     //A random number between 1 and 10 is 9.
     //A random number between 5 and 82 is 43.
