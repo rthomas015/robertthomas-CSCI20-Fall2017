@@ -29,7 +29,7 @@ int GenerateRandomNumber(int number_1, int number_2) {
     SwapNumbers(number_1, number_2);
     //call time and use that value for the seed
     srand(time(0));
-    random_number = (rand () % number_1) + number_2;
+    random_number = (rand () % (number_1 - number_2 + 1)) + number_2;
     
     //output information to user
     cout << "A random number between " << number_2 << " and " << number_1 << " is " << random_number << ".";
