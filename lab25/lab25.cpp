@@ -18,10 +18,10 @@ using namespace std;
 //Create a class called Book, that stores user input information regarding actual books
 class Book {
     private:
-        //create a book_title and book_author string variable, and an integer variable called book_copyright_year
-        //book_title holds the book's title as a string
-        //book_author holds the book's author as a string
-        //book_copyright_year holds the book's copyright year as an integer
+        //create a book_title and book_author_ string variable, and an integer variable called book_copyright_year_
+        //book_title_ holds the book's title as a string
+        //book_author_ holds the book's author as a string
+        //book_copyright_year_ holds the book's copyright year as an integer
         string book_title_,
                book_author_;
         int book_copyright_year_;
@@ -29,17 +29,17 @@ class Book {
     public:
         //declare public functions of the book class
         
-        //Setters: SetTitle sets the book_title variable of the book object
-        //         SetAuthor sets the book_author variable of the book object
-        //         SetCopyright_Year sets the book_copyright_year varible of the book object
+        //Setters: SetTitle sets the book_title_ variable of the book object
+        //         SetAuthor sets the book_author_ variable of the book object
+        //         SetCopyright_Year sets the book_copyright_year_ varible of the book object
      
         void SetTitle (string title);
         void SetAuthor (string author);
         void SetCopyright_Year (int copyright_year);
         
-        //Getters: GetTitle returns the book object's title held in the book_title variable
-        //         GetAuthor returns the book object's author held in the book_author variable
-        //         GetCopyright_Year returns the book object's copyright year held in the book_copyright_year variable
+        //Getters: GetTitle returns the book object's title held in the book_title_ variable
+        //         GetAuthor returns the book object's author held in the book_author_ variable
+        //         GetCopyright_Year returns the book object's copyright year held in the book_copyright_year_ variable
         
         string GetTitle () const;
         string GetAuthor () const;
