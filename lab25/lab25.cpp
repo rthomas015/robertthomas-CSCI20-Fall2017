@@ -15,8 +15,8 @@
 
 using namespace std;
 
-//Create a class called book, that stores user input information regarding actual books
-class book {
+//Create a class called Book, that stores user input information regarding actual books
+class Book {
     private:
         //create a book_title and book_author string variable, and an integer variable called book_copyright_year
         //book_title holds the book's title as a string
@@ -50,39 +50,39 @@ class book {
 };
 
 //SetTitle sets the book_title variable of the book object
-void book::SetTitle (string title) {
+void Book::SetTitle (string title) {
     book_title = title;
     return;
 };
 
 //SetAuthor sets the book_author variable of the book object
-void book::SetAuthor (string author) {
+void Book::SetAuthor (string author) {
     book_author = author;
     return;
 };
 
 //SetCopyright_Year sets the book_copyright_year varible of the book object
-void book::SetCopyright_Year (int copyright_year) {
+void Book::SetCopyright_Year (int copyright_year) {
     book_copyright_year = copyright_year;
     return;    
 };
 
 //GetTitle returns the book object's title held in the book_title variable
-string book::GetTitle() const {
+string Book::GetTitle() const {
     return book_title;
 };
 
 //GetAuthor returns the book object's author held in the book_author variable
-string book::GetAuthor () const {
+string Book::GetAuthor () const {
     return book_author;
 };
 
 // GetCopyright_Year returns the book object's copyright year held in the book_copyright_year variable
-int book::GetCopyright_Year () const {
+int Book::GetCopyright_Year () const {
     return book_copyright_year;
 };
 
-void book::Print() const{
+void Book::Print() const{
     //print book's title
     cout << endl << book_title << "            ";
     //print book's author
@@ -97,7 +97,7 @@ void book::Print() const{
 int main () {
     //Initialize variables needed for program:
     //Create five book objects
-    book number_1, number_2, number_3, number_4, number_5;
+    Book number_1, number_2, number_3, number_4, number_5;
     //Create a title string, an author string, and a copyright year integer that are accessible in the scope of the main function
     string title = "",
            author = "";
