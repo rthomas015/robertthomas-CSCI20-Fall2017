@@ -22,9 +22,9 @@ class Book {
         //book_title holds the book's title as a string
         //book_author holds the book's author as a string
         //book_copyright_year holds the book's copyright year as an integer
-        string book_title,
-               book_author;
-        int book_copyright_year;
+        string book_title_,
+               book_author_;
+        int book_copyright_year_;
         
     public:
         //declare public functions of the book class
@@ -51,44 +51,44 @@ class Book {
 
 //SetTitle sets the book_title variable of the book object
 void Book::SetTitle (string title) {
-    book_title = title;
+    book_title_ = title;
     return;
 };
 
 //SetAuthor sets the book_author variable of the book object
 void Book::SetAuthor (string author) {
-    book_author = author;
+    book_author_ = author;
     return;
 };
 
 //SetCopyright_Year sets the book_copyright_year varible of the book object
 void Book::SetCopyright_Year (int copyright_year) {
-    book_copyright_year = copyright_year;
+    book_copyright_year_ = copyright_year;
     return;    
 };
 
 //GetTitle returns the book object's title held in the book_title variable
 string Book::GetTitle() const {
-    return book_title;
+    return book_title_;
 };
 
 //GetAuthor returns the book object's author held in the book_author variable
 string Book::GetAuthor () const {
-    return book_author;
+    return book_author_;
 };
 
 // GetCopyright_Year returns the book object's copyright year held in the book_copyright_year variable
 int Book::GetCopyright_Year () const {
-    return book_copyright_year;
+    return book_copyright_year_;
 };
 
 void Book::Print() const{
     //print book's title
-    cout << endl << book_title << "            ";
+    cout << endl << book_title_ << "            ";
     //print book's author
-    cout << book_author << "            ";
+    cout << book_author_ << "            ";
     //print book's copyright_year
-    cout << book_copyright_year;
+    cout << book_copyright_year_;
     return;
 }
 
