@@ -13,7 +13,7 @@ int main() {
         cout << "Please enter a character: ";
         cin  >> ch;
          
-        //check -- is it a letter??
+    /*    //check -- is it a letter??
         //CHANGED - combined nested if statements in to one statement for readability
         if ((ch >= 'A') && (ch <= 'Z')) {
                cout << "Yes, that is a uppercase letter." << endl;
@@ -27,7 +27,18 @@ int main() {
         else {
             cout << "Not a letter" << endl;
         }
-        
-
+     */   
+        if (ch >= 'A') {
+            if (ch <= 'Z') {
+               cout << "Yes, that is a uppercase letter." << endl;
+            }
+        }
+        else if (ch >= 'a') {
+            if (ch <= 'z') {
+               cout << "Yes, that is a lowercase letter" << endl;
+            }
+        }        else {
+            cout << "Not a letter" << endl;
+        }
     return 0;
 }
