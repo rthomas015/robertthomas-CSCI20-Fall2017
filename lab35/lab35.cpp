@@ -2,8 +2,10 @@
   By: Robert Thomas
   Date: 10/24/2017
   Description: 
-  The purpose of Lab 3.5 is to create a class that has a variety of functions:
-  
+  The purpose of Lab 3.5 is to create a class that converts temperatures from
+  fahrenheit, celsius or kelvin in to kelvin, and converts the kelvin value in
+  to fahrenheit or celsius. The class uses a default constructor and an overloaded
+  constructor as well, which set the value of the kelvin_ variable of the class appropriately.
 */
 
 //pre-processor directives
