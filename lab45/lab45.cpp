@@ -67,27 +67,33 @@ int main () {
     generated_string_3.replace(1,(generated_string_3.size() - 1), second_name);
 
     //change generated_string_1 to lower case
+    //loop through each character
     for (int i=0; i<(generated_string_1.size()); i++) {
+        //and then test if the value at that string location is capitalized, if it is convert it to a lower case character
         if((static_cast<char>(generated_string_1.at(i)) >= 'A' ) && (static_cast<char>(generated_string_1.at(i)) <= 'Z')) {
             generated_string_1.at(i) = static_cast<char>(generated_string_1.at(i)) + 32;
         }
     }
  
     //change generated_string_2 to lower case
+    //loop through each character
     for (int i=0; i<(generated_string_2.size()); i++) {
+        //and then test if the value at that string location is capitalized, if it is convert it to a lower case character
         if((static_cast<char>(generated_string_2.at(i)) >= 'A' ) && (static_cast<char>(generated_string_2.at(i)) <= 'Z')) {
             generated_string_2.at(i) = static_cast<char>(generated_string_2.at(i)) + 32;
         }
     }
     
     //change generated_string_3 to lower case
+    //loop through each character
     for (int i=0; i<(generated_string_3.size()); i++) {
+        //and then test if the value at that string location is capitalized, if it is convert it to a lower case character
         if((static_cast<char>(generated_string_3.at(i)) >= 'A' ) && (static_cast<char>(generated_string_3.at(i)) <= 'Z')) {
             generated_string_3.at(i) = static_cast<char>(generated_string_3.at(i)) + 32;
         }
     }
     
-    
+    //Output information to user of program (all three generated names)
     cout << endl << "--Generated Name Options--" << endl
          << generated_string_1 << endl
          << generated_string_2 << endl
