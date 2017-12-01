@@ -1,7 +1,8 @@
 /*Lab 5.1 - Pointers
   By: Robert Thomas
   Date: 11/28/2017
-  Description: This program is pre-written, we are supposed to review the code explain what is occuring and why
+  Description: This program is pre-written, we are supposed to review the code explain what is 
+  occuring and why it is
 */
 
 //pre-processor directives
