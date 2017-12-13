@@ -45,17 +45,17 @@ class Image {
             num_of_lines = 0;
             
             image_input.open("duck.ppm");
-            if (!image_input.is_open()) {
+            /*if (!image_input.is_open()) {
                 cout << "Error reading duck.ppm" << endl;
                 return 1;
-            }
+            }*/
             
             
             image_output.open("output_generic.ppm");
-            if (!image_output.is_open()) {
+            /*if (!image_output.is_open()) {
                 cout << "Error reading/opening output_generic" << endl;
                 return 1;
-            }
+            }*/
             
         }
         
@@ -66,16 +66,16 @@ class Image {
             num_of_lines = 0;
             
             image_input.open("duck.ppm");
-            if (!image_input.is_open()) {
+            /*if (!image_input.is_open()) {
                 cout << "Error reading duck.ppm" << endl;
                 return 1;
-            }
+            }*/
             
             image_output.open("output_special.ppm");
-            if (!image_output.is_open()) {
+            /*if (!image_output.is_open()) {
                 cout << "Error reading/opening output_generic" << endl;
                 return 1;
-            }
+            }*/
         }
         
         //deconstructor class
